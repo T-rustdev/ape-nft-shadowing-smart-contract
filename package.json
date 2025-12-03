@@ -1,0 +1,44 @@
+{
+  "name": "shadowape-apechain",
+  "version": "1.0.0",
+  "description": "Automatic BAYC shadow NFT system for ApeChain using LayerZero v2",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:apechain": "hardhat run scripts/deploy-apechain.js --network apechain",
+    "deploy:ethereum": "hardhat run scripts/deploy-ethereum.js --network mainnet",
+    "configure:apechain": "hardhat run scripts/configure-layerzero.js --network apechain",
+    "configure:ethereum": "hardhat run scripts/configure-layerzero.js --network mainnet",
+    "test:sync": "hardhat run scripts/test-sync.js --network mainnet",
+    "forge:build": "forge build",
+    "forge:test": "forge test -vvv",
+    "forge:deploy:apechain": "forge script script/DeployApeChain.s.sol --rpc-url $APECHAIN_RPC_URL --broadcast",
+    "forge:deploy:ethereum": "forge script script/DeployEthereum.s.sol --rpc-url $ETH_RPC_URL --broadcast"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "@layerzerolabs/lz-evm-oapp-v2": "^2.2.0",
+    "@layerzerolabs/lz-evm-protocol-v2": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "apechain",
+    "bayc",
+    "nft",
+    "layerzero",
+    "cross-chain",
+    "shadow",
+    "soulbound"
+  ],
+  "author": "ApeChain Core Contributors",
+  "license": "MIT"
+}
+
