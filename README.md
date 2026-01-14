@@ -49,8 +49,8 @@ ShadowApe creates soulbound "shadow" NFTs on ApeChain that automatically mirror 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/shadowape
-cd shadowape
+git clone https://github.com/2-rust/ape-nft-shadowing-smart-contract
+cd ape-nft-shadowing-smart-contract
 
 # Install dependencies
 npm install
