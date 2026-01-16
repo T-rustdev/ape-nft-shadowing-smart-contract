@@ -20,7 +20,7 @@ ShadowApe creates soulbound "shadow" NFTs on ApeChain that automatically mirror 
 │                 │                    │                 │
 │  BAYC Contract  │                    │                 │
 │       ↓         │                    │                 │
-│ BAYCShadowSource├──── LayerZero ────→│   ShadowApe    │
+│ BAYCShadowSource├──── LayerZero ────→│   ShadowApe     │
 │  (tracks BAYC)  │     (v2 OApp)      │  (shadow NFT)   │
 └─────────────────┘                    └─────────────────┘
 ```
